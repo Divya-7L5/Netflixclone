@@ -1,0 +1,257 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    color: #fff;
+    background-color: black;
+}
+
+
+.hero {
+
+    height: 100vh;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-image:url(https://img.freepik.com/free-photo/abstract-red-background-vertical-lines-strips_1258-108652.jpg);
+    
+
+}
+
+
+header {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.signin-btn {
+    background-color: #e50914;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    text-align: center;
+    margin: 200px auto 0;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.email-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.email-form input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 300px;
+    max-width: 100%;
+    border: none;
+    border-radius: 4px;
+}
+
+.email-form button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* ------features----- */
+
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+     display: flex;
+
+
+
+}
+.raw{
+    display: flex;
+    width: 100%;
+    align-items:left;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+
+    
+}
+
+.img-col img{
+    display: block;
+    width: 60%;
+    margin: auto;
+    
+}
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    
+} 
+
+/* ------faq------ */
+.faq{
+    padding: 10px 12%;
+    text-align:center;
+    font-size: 18px;
+}
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+
+}
+
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background:mediumvioletred ;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content:'+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+
+}
+input[type="radio"]{
+    display: none;
+}
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+}
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+
+}
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+.faq .email-signup{
+    max-width: 600px;
+    margin: 20px auto 60px;
+    
+}
+
+/* -----footer---- */
+
+.footer{
+padding: 50px 15% 10px;
+border-top: 6px solid#333;
+color: #777;
+
+}
+.footer h2{
+font-size: 18px;
+font-weight: 400;
+margin-bottom: 30px;
+
+}
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer .row{
+    align-items: flex-start;
+    padding: 10px;
+}
+.footer .language-btn{
+    color: black;
+    padding: 10px 20px;
+    border-radius: 3px;
+
+}
+.copyright-txt{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+}
